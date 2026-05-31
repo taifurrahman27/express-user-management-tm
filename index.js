@@ -6,8 +6,15 @@ app.get('/', (req, res) => {
     res.send('Hello World from TR TECH!')
 })
 
+
+const users = [
+    { id: 1, name: "John Doe", email: "john@doe.com" },
+    { id: 2, name: "Jan Doe", email: "jan@doe.com" },
+    { id: 3, name: "Jon Doe", email: "jon@doe.com" }
+]
+
 app.get('/users', (req, res) => {
-    res.send("Users are waking up");
+    res.send(users);
 })
 
 app.get('/products', (req, res) => {
